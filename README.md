@@ -48,3 +48,27 @@ We designed a **5-level ethical scoring system** applicable to both natural-lang
 
 ## 🗂 Repository Structure
 
+```text
+MED-CODE-BENCH/
+├─ data/
+│ ├─ benchmark_samples/
+│ │ ├─ justice_case_01.json
+│ │ ├─ beneficence_case_02.json
+│ │ ├─ nonmaleficence_case_03.json
+│ │ └─ autonomy_case_04.json
+│ ├─ train_samples/
+│ │ ├─ train_pair_justice.jsonl
+│ │ ├─ train_pair_autonomy.jsonl
+│ │ └─ train_pair_mixed.jsonl
+│ └─ README.md
+├─ scripts/
+│ ├─ eval.py # scoring based on ethical rubric
+│ ├─ train_sft.py # supervised fine-tuning
+│ └─ train_dpo.py # direct preference optimization
+├─ metrics/
+│ ├─ ethics_scale.py # 1–5 scoring definitions
+│ └─ kappa_agreement.py
+├─ configs/
+│ ├─ models.yaml
+│ └─ training.yaml
+└─ README.md
