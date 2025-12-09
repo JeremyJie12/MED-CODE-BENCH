@@ -48,6 +48,7 @@ We designed a **5-level ethical scoring system** applicable to both natural-lang
 
 ## 🗂 Repository Structure
 
+```text
 MED-CODE-BENCH/
 ├── README.md                   # Project overview and usage guide
 └── dataset/                    # Main dataset directory
