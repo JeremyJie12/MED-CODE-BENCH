@@ -48,16 +48,10 @@ We designed a **5-level ethical scoring system** applicable to both natural-lang
 
 ## 🗂 Repository Structure
 
-```text
 MED-CODE-BENCH/
-└─ data/ # All dataset samples
-├─ benchmark_samples/ # Test set examples (evaluation)
-│ ├─ justice_case_01.json
-│ ├─ beneficence_case_02.json
-│ ├─ nonmaleficence_case_03.json
-│ └─ autonomy_case_04.json
-├─ train_samples/ # Training set examples
-│ ├─ train_pair_justice.jsonl
-│ ├─ train_pair_autonomy.jsonl
-│ └─ train_pair_mixed.jsonl
-└─ README.md # Dataset description
+├── README.md                   # Project overview and usage guide
+└── dataset/                    # Main dataset directory
+    ├── eval/                   # Evaluation Benchmark (Validation Set)
+    │   └── benchmark_example.json  # Contains adversarial prompts (Background + Question)
+    └── train/                  # Alignment Corpus (Training Set)
+        └── train_example.json      # Contains preference pairs (Chosen vs. Rejected) for DPO
